@@ -6,27 +6,18 @@ namespace Lab2Bwork
     {
         static void Main(string[] args)
         {
-            int numInt = 500;
+            double numDouble = 1.23;
 
-      // get type of numInt
-      Type n = numInt.GetType();
-
-      // Implicit Conversion
-      double numDouble = numInt;
-
-      // get type of numDouble
-      Type n1 = numDouble.GetType();
+      // Explicit casting
+      int numInt = (int) numDouble;  
 
       // Value before conversion
-      Console.WriteLine("numInt value: "+numInt);
-      Console.WriteLine("numInt Type: " + n);
+      Console.WriteLine("Original double Value: "+numDouble);
 
-      // Value after conversion
-      Console.WriteLine("numDouble value: "+numDouble);
-      Console.WriteLine("numDouble Type: " + n1);
+      // Value before conversion
+      Console.WriteLine("Converted int Value: "+numInt);
       Console.ReadLine();
 
-
-        }
+      }
     }
 }
